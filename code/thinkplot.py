@@ -142,8 +142,11 @@ def PrePlot(num=None, rows=None, cols=None):
     size_map = {(1, 1): (8, 6),
                 (1, 2): (12, 6),
                 (1, 3): (12, 6),
+<<<<<<< HEAD
                 (1, 4): (12, 5),
                 (1, 5): (12, 4),
+=======
+>>>>>>> c09e7285de4dcdfd1011452d913f287800cd5c75
                 (2, 2): (10, 10),
                 (2, 3): (16, 10),
                 (3, 1): (8, 10),
@@ -365,6 +368,7 @@ def Hist(hist, **options):
     # find the minimum distance between adjacent values
     xs, ys = hist.Render()
 
+<<<<<<< HEAD
     # see if the values support arithmetic
     try:
         xs[0] - xs[0]
@@ -374,6 +378,8 @@ def Hist(hist, **options):
         xs = np.arange(len(xs))
         pyplot.xticks(xs+0.5, labels)
 
+=======
+>>>>>>> c09e7285de4dcdfd1011452d913f287800cd5c75
     if 'width' not in options:
         try:
             options['width'] = 0.9 * np.diff(xs).min()
@@ -651,7 +657,10 @@ def Config(**options):
         LOC = options.get('loc', LOC)
         pyplot.legend(loc=LOC)
 
+<<<<<<< HEAD
     # x and y ticklabels can be made invisible
+=======
+>>>>>>> c09e7285de4dcdfd1011452d913f287800cd5c75
     val = options.get('xticklabels', None)
     if val is not None:
         if val == 'invisible':
@@ -708,12 +717,15 @@ def Save(root=None, formats=None, **options):
       options: keyword args used to invoke various pyplot functions
     """
     clf = options.pop('clf', True)
+<<<<<<< HEAD
 
     save_options = {}
     for option in ['bbox_inches', 'pad_inches']:
         if option in options:
             save_options[option] = options.pop(option)
 
+=======
+>>>>>>> c09e7285de4dcdfd1011452d913f287800cd5c75
     Config(**options)
 
     if formats is None:
@@ -727,22 +739,36 @@ def Save(root=None, formats=None, **options):
 
     if root:
         for fmt in formats:
+<<<<<<< HEAD
             SaveFormat(root, fmt, **save_options)
+=======
+            SaveFormat(root, fmt)
+>>>>>>> c09e7285de4dcdfd1011452d913f287800cd5c75
     if clf:
         Clf()
 
 
+<<<<<<< HEAD
 def SaveFormat(root, fmt='eps', **options):
+=======
+def SaveFormat(root, fmt='eps'):
+>>>>>>> c09e7285de4dcdfd1011452d913f287800cd5c75
     """Writes the current figure to a file in the given format.
 
     Args:
       root: string filename root
       fmt: string format
     """
+<<<<<<< HEAD
     _Underride(options, dpi=300)
     filename = '%s.%s' % (root, fmt)
     print('Writing', filename)
     pyplot.savefig(filename, format=fmt, **options)
+=======
+    filename = '%s.%s' % (root, fmt)
+    print('Writing', filename)
+    pyplot.savefig(filename, format=fmt, dpi=300)
+>>>>>>> c09e7285de4dcdfd1011452d913f287800cd5c75
 
 
 # provide aliases for calling functons with lower-case names

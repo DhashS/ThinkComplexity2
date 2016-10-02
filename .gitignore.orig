@@ -1,0 +1,87 @@
+<<<<<<< HEAD
+=======
+/code/.ipynb_checkpoints
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+>>>>>>> c09e7285de4dcdfd1011452d913f287800cd5c75
+*.py[cod]
+
+# C extensions
+*.so
+
+<<<<<<< HEAD
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+=======
+# Distribution / packaging
+.Python
+env/
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+>>>>>>> c09e7285de4dcdfd1011452d913f287800cd5c75
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+<<<<<<< HEAD
+=======
+
+# Rope
+.ropeproject
+
+# Django stuff:
+*.log
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
+>>>>>>> c09e7285de4dcdfd1011452d913f287800cd5c75

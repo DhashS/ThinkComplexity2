@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+ThinkComplexity
+===============
+2nd Edition
+
+Code for Allen Downey's book Think Complexity, 2nd edition.
+
+PDF and HTML versions available from http://greenteapress.com/wp/think-complexity/
+
+The first edition, published by O'Reilly Media, is available from http://greenteapress.com/complexity/index.html
+=======
+ThinkBayes2
+===========
+
+Text and code for the second edition of Think Bayes, by Allen Downey.
+
+Note: The code is a version ahead of the book.  I have not started revising the book yet.
+>>>>>>> c09e7285de4dcdfd1011452d913f287800cd5c75
